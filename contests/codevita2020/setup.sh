@@ -3,8 +3,8 @@ BITS=competition-bits-master
 
 setxkbmap cz -option caps:swapescape
 mkdir -p prog
-[ ! -d $BITS ] && rm -f master.zip && wget https://g...content-available-to-author-only...b.com/RichardHladik/competition-bits/archive/master.zip && unzip master.zip
-[ ! -d $NOTEBOOK ] && rm -f tooling-updates.zip && wget https://g...content-available-to-author-only...b.com/trinerdi/icpc-notebook/archive/tooling-updates.zip && unzip tooling-updates.zip
+[ ! -d $BITS ] && rm -f master.zip && wget https://github.com/RichardHladik/competition-bits/archive/master.zip && unzip master.zip
+[ ! -d $NOTEBOOK ] && rm -f tooling-updates.zip && wget https://github.com/trinerdi/icpc-notebook/archive/tooling-updates.zip && unzip tooling-updates.zip
 rm -f master.zip tooling-updates.zip
 
 cp $NOTEBOOK/src/trinerdi/{sc.sh,template.cpp} prog
